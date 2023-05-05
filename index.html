@@ -32,9 +32,9 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
         </div>
         <div class="modal-body">
-          <form data-netlify="true">
+          <form name="Error form" data-netlify="true">
             <div class="mb-3">
-              <label for="errorType" class="form-label">Valitse virheen tyyppi:</label>
+              <label for="errorType" class="form-label" name="error type">Valitse virheen tyyppi:</label>
               <select id="errorType" class="form-select">
                 <option value="Väri väärin">Haalareiden väri väärin (tai muu asiavirhe)</option>
                 <option value="Haalari puuttuu">En löytänyt haalareitani listasta</option>
@@ -42,7 +42,7 @@
               </select>
             </div>
             <div class="mb-3">
-              <label for="errorDescription" class="form-label">Kerro virheestä tarkemmin:</label>
+              <label for="errorDescription" class="form-label" name="viesti">Kerro virheestä tarkemmin:</label>
               <textarea class="form-control" id="errorDescription" rows="3"></textarea>
             </div>
             <div class="modal-footer">
