@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haalaripedia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header class="bg-dark text-white py-3">
+    <div class="container">
+      <h1 class="m-0">Haalaripedia</h1>
+    </div>
+  </header>
+  <main class="container py-4">
+    <section>
+      <p>Opiskelijahaalarit ovat klassinen osa suomalaista korkeakoulukulttuuria. <br> Tältä sivulta voit kaupunkikohtaisesti selvittää eri haalarien värit, jos ne ovat sattuneet unohtumaan!</p>
+      <p><b>HUOM!</b> Tällä hetkellä sivun tiedot on kerätty suurimmaksi osaksi avoimista lähteistä (wikipedia). Tiedoissa voi olla virheitä! Jos löydät sellaisen, lähetä korjauspyyntö täältä!</p>
+    </section>
+    <section>
+      <h2>Suodata haalareita</h2>
+      <form>
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <label for="city" class="form-label">Valitse kaupunki:</label>
+            <select id="city" class="form-select">
+              <option value="">Kaikki</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="color" class="form-label">Valitse pääväri:</label>
+            <select id="color" class="form-select">
+              <option value="">Kaikki</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section>
+      <hr class="hr" />
+      <div id="coveralls-list"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

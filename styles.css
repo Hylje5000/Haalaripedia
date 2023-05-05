@@ -1,0 +1,59 @@
+:root {
+  --main-color: #000; /* default color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.form-label {
+  width: 100%;
+}
+
+#city, #color {
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .form-label {
+    width: auto;
+  }
+}
+
+.coverall-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.coverall-item-color {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #000
+}
+
+.coverall-item-color-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.color-box {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+
+
+
